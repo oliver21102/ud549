@@ -15,7 +15,7 @@ describe("Player", function() {
     expect(player).toBePlaying(song);
   });
 
-  describe("when song has been paused", function() {
+  describe("when song has been paused", function() {                             // CUANDO SE PAUSA 
     beforeEach(function() {
       player.play(song);
       player.pause();
@@ -46,7 +46,7 @@ describe("Player", function() {
   });
 
   //demonstrates use of expected exceptions
-  describe("#resume", function() {
+  describe("#resume", function() {                                                              // CUANDO SE LE HACE RESUME
     it("should throw an exception if song is already playing", function() {
       player.play(song);
 
@@ -55,4 +55,12 @@ describe("Player", function() {
       }).toThrowError("song is already playing");
     });
   });
+
+  describe('Prueba', function() {
+    it('should sum two numbers', function() {
+      expect(5+5).toBe(11);
+      expect(6+6).toEqual(12);
+    });
+  });
+
 });
